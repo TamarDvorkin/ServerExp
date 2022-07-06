@@ -35,10 +35,8 @@ const LOTRCoord = latArray.map(function (x, i) {
 });
 
 
+
 exports.locationsControllers=(req,res) => {
-    
-    const userLon=console.log(req.query.lon)
-    const userLat= console.log(req.query.lat)
     const distanceHaver = [];
     
     for (let i = 0; i < LOTRCoord.length; i++) {
