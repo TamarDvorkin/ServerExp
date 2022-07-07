@@ -8,25 +8,27 @@ const nameArray = [];
 for (let place=0; place< LOTRplaces.length; place++ ){
     if (LOTRplaces[place].name!=undefined){
       nameArray.push(LOTRplaces[place].name)
+
 }}
 
 const lotArray = [];
 for (let place=0; place< LOTRplaces.length; place++ ){
-    if (LOTRplaces[place].name!=undefined){
+    if (LOTRplaces[place].lot!=undefined){
         lotArray.push(LOTRplaces[place].lot)
 }}
 
 const latArray = [];
 for (let place=0; place< LOTRplaces.length; place++ ){
-    if (LOTRplaces[place].name!=undefined){
+    if (LOTRplaces[place].lng!=undefined){
         latArray.push(LOTRplaces[place].lng)
 }}
 
 const sceneArray = []
 for (let place=0; place< LOTRplaces.length; place++ ){
-    if (LOTRplaces[place].name!=undefined){
+    if (LOTRplaces[place].scene!=undefined){
         sceneArray.push(LOTRplaces[place].scene)
 }}
+
 
 
 const LOTRCoord = latArray.map(function (x, i) {
